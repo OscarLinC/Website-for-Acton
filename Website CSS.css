@@ -1,0 +1,290 @@
+ /*banner*/
+text{
+    font-family:"century gothic";
+}
+
+ body {
+    overflow-x: hidden;
+    background-color:#001b27;
+}   
+#banner{
+    max-width: 102%;
+    min-width: 102%;
+    left:-1%;
+    position: relative;
+    z-index: 2;
+
+}
+/* CSS for Menu Bar */
+#top-bar-pos{
+    position: relative;
+    width:80%;
+    margin: auto;
+    max-width: 80%;
+    padding: 0% 10%;
+    align-content:center;
+
+}
+
+.bar-container{
+    position: relative;
+    display: inline-block;
+    margin:auto;
+    max-width: 20%;
+    max-height:10%;
+    padding-inline:3%;
+}
+.menu-bar-btn{
+    background-color: #002f44;
+    color: white;
+    margin: 0 30%;
+    font-size: 150%;
+    padding-top:15%;
+    padding-bottom:15%;
+    min-height: 10%;
+    max-height: 30%;
+    min-width: 150%;
+    max-width: 170%;
+    border: none;
+}
+
+.bar-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width:  110%;
+    margin:0 30%;
+    box-shadow: 0px 0.5% 1% 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.bar-content a{
+    color: rgb(0, 0, 0);
+    padding: 5% 12%;
+    text-decoration: none;
+    display: block;
+}
+
+.bar-content a:hover {background-color: #ddd;}
+
+.bar-container:hover .bar-content {display: block;}
+
+.bar-container:hover .menu-bar-btn {background-color: #001d2b;}
+
+/* CSS for Slideshow */
+
+.slideShowContainer{
+    max-width: 65%;
+    position: relative;
+    margin: 5% 20%;
+}
+
+.slide{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    height: auto;
+    margin-top: -5%;
+    padding: 10% 2%;
+    color: rgb(3, 17, 58);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 1% 1% 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 1% 0 0 1%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(98, 98, 98, 0.8);
+}
+
+.caption {
+    color: #f2f2f2;
+    font-size: 5%;
+    padding: 2% 3%;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.currentSlideNum {
+    color: #090000;
+    font-size: 120%;
+    padding: 2% 3%;
+    position: absolute;
+    top: 0;
+    font-family:Century Gothic;
+}
+
+.dot {
+    cursor: pointer;
+    margin-top: 100%;
+    position: relative;
+    height: 7px;
+    width: 7px;
+    margin: 0 0.5%;
+    background-color: rgb(251, 255, 0);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+
+#dotpos{
+    position: relative;
+    width: 100%;
+
+}
+.active, .dot:hover {
+    background-color: #ffffff;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+                
+/*Product Section*/
+.large-container{
+margin: 5%;
+margin-top:0%;
+margin-bottom:-5%;
+padding-left:8%;
+padding-right: 8%;
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.product-sect-container{
+display: inline-block;
+position: relative;
+width: 20%;
+height: 60%;
+max-width: 20%;
+max-height: 60%;
+background-color: #204a5d;
+position: relative;
+margin: 3% 2%;
+padding-top: 2%;
+padding-bottom: 2%;
+-moz-transition: all 1000ms ease;
+ -ms-transition: all 1000ms ease;
+ -o-transition: all 1000ms ease;
+ transition: all 1000ms ease;
+}
+
+.pic-in-container{
+max-width: 70%;
+padding: 14%;
+padding-top: 5%;
+padding-bottom: 10%;
+}
+.heading-in-container{
+text-align: justify;
+padding: 5%;
+margin-left: 5%;
+color: white;
+font-family: century gothic;
+font-size: 150%;
+font-weight: none;
+
+}
+.text-in-container{
+text-align: justify;
+padding: 10%;
+padding-top: 5%;
+color: white;
+font-family: century gothic;
+
+}
+
+.product-sect-container:hover {
+transform: scale(1.1);
+}
+a:link {
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a:active {
+text-decoration: underline;
+}
+
+/*Footer*/
+.footer{
+margin:0;
+bottom:0;
+position: relative;
+width:103%;
+left: -1%;
+height: 25%;
+max-width: 103%;
+background-color:rgba(4, 51, 56, 0.8);
+}
+
+.footer-img{
+position: relative;
+display: inline-block;
+max-width:10%;
+}
+
+.text-container{
+display:inline-block;
+bottom: 1%;
+}
+
+.footer-text{
+position: relative;
+left: 5%;
+color: white;
+font-family: Century Gothic;
+top: 10%;
+}
+
+.Title{
+    text-align: center;
+    max-width:100%;
+    height:auto;
+    margin-top: 5%;
+    color: white;
+    font-size: 400%;
+    font-family: century gothic;
+}
+
+.Bodytext{
+    max-width:100%;
+    right:10%;
+    height:auto;
+    padding-top:3%;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+    font-family: century gothic;
+}

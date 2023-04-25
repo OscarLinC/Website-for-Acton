@@ -1,0 +1,347 @@
+<HTML>
+    <HEAD>
+        <link rel="stylesheet" href="Website CSS.css">\
+        <link rel="icon" type="images/x-icon" href="Images/logo-1.jpg">
+        <TITLE>About Us</TITLE>
+        <STYLE type="text/css">
+            
+            /*banner*/
+
+    /* CSS for Menu Bar */
+
+
+            .images{
+                max-width: 70%;
+                margin: 15%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+    
+
+            .Bodytext{
+                max-width:100%;
+                height:auto;
+                padding-top:3%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 3%;
+                color: white;
+                font-size: 150%;
+                text-align: justify;
+                font-family: century gothic;
+            }
+
+                      /* CSS for Slideshow */
+
+            .slideShowContainer{
+                max-width: 40%;
+                position: relative;
+                margin: 10% 15%;
+                margin-left:5%;
+                margin-top:3%;
+                display: inline-block;
+            }
+
+            .slide{
+                display: none;
+            }
+
+            .prev, .next{
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                height: auto;
+                margin-top: -5%;
+                padding: 10% 2%;
+                color: rgb(3, 17, 58);
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 1% 1% 0;
+                user-select: none;
+            }
+            
+            .next{
+                right: 0;
+                border-radius: 1% 0 0 1%;
+            }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(98, 98, 98, 0.8);
+            }
+
+            .caption {
+                color: #f2f2f2;
+                font-size: 5%;
+                padding: 2% 3%;
+                position: absolute;
+                bottom: 2%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .currentSlideNum {
+                color: #090000;
+                font-size: 120%;
+                padding: 2% 3%;
+                position: absolute;
+                top: 0;
+                font-family:Century Gothic;
+            }
+
+            .dot {
+                cursor: pointer;
+                margin-top: 100%;
+                position: relative;
+                height: 7px;
+                width: 7px;
+                margin: 0 0.5%;
+                background-color: rgb(251, 255, 0);
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                z-index: 1;
+            }
+
+            #dotpos{
+                position: absolute;
+                width: 100%;
+                margin-top: 2%;
+
+            }
+            .active, .dot:hover {
+                background-color: #ffffff;
+            }
+
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+
+            #large-container{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+
+            }
+
+            
+        </STYLE>
+
+
+    </HEAD>
+    <SCRIPT>
+        let slideIndex = 1;
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function AutomatedSlide(){
+            plusSlides(1);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        const automateds = setInterval(AutomatedSlide, 7000);
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </SCRIPT>
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <BODY>
+       <!--Top Menu Bar-->
+    <!--Top Menu Bar-->        
+    <IMG id='banner' src="Images/banner.png"></IMG>
+    <DIV id="top-bar-pos">
+
+        <DIV class="bar-container">
+            <BUTTON class="menu-bar-btn">關於我們</BUTTON>
+                <DIV class="bar-content">
+                    <A href="About us page.html">關於我們</A>
+                </DIV>
+        </DIV>
+        <DIV class="bar-container">
+            <BUTTON class="menu-bar-btn">產品介紹</BUTTON>
+                <DIV class="bar-content">
+                    
+                    <A href="Gland Packing.html">密封填料</A>
+                    <A href="Live Loading Kit.html">預力彈簧自動調校組件</A>
+                    <A href="Packing Set.html" style="font-family: Century Gothic;">Packing Set</A>
+                    <A href="Disc Spring.html">預力彈簧</A>
+                    <A href="Steel Trap Gasket.html" style="font-family: Century Gothic;">Steel Trap Gasket墊片</A>
+                    <A href="Split Seal.html">雙辦式軸封</A>
+                    <A href="Spiral Trac.html">顆粒旋出器</A>
+
+                </DIV>
+        </DIV> 
+        <DIV class="bar-container">
+            <BUTTON class="menu-bar-btn">產品應用</BUTTON>
+                <DIV class="bar-content">
+                    <A href="Product-application.html">產品應用</A>
+                </DIV>
+        </DIV> 
+        <DIV class="bar-container">
+            <BUTTON class="menu-bar-btn">聯絡我們</BUTTON>
+                <DIV class="bar-content">
+                    <A href="Contact us.html">聯絡我們</A>
+                </DIV>
+        </DIV> 
+        <DIV class="bar-container">
+            <BUTTON class="menu-bar-btn">總部主頁</BUTTON>
+                <DIV class="bar-content">
+                    <A href="ACTON CO LTD website.html">聯誠主頁</A>
+                    <A href="https://www.chesterton.com/en-us" style="font-family: century gothic;">Chesterton</A>
+                </DIV>
+        </DIV> 
+        
+    </DIV>
+
+        <!--Text-->
+        <DIV class="Title">About us</DIV>
+        <IMG src="Images/About us images/Screenshot 2023-03-09 120256.jpg" class="images"></IMG>
+        <DIV class="Bodytext" style="margin-top:5%;">美國A.W. CHERSTERTON公司成立於西元1884年，至今已有百餘年之歷史，為機械軸封(Mechanical Seal)、填函墊料(Gland Packing)、墊片(Gasket)之專業設計與製造廠
+            ，專門銷售及服務於發電廠、鋼鐵廠、石化廠、煉油廠、廢水處理廠、船舶及紙漿造紙業等工業。其宗旨就是以專業技術及誠懇的服務態度為每一個客戶真正深入地去解決每一個問題，使之降低維修成本，並大幅提升競爭力及生產力。
+        </DIV>
+        <DIV class="Bodytext"  style="margin-top:5%;">A.W. CHESTERTON的產品進入台灣工業已有數十年之久，我司有諸多成功的改善實績，深獲國內眾多企業愛戴，如中油、中鋼、自來水公司、台塑企業、全省發電廠及國內各大知名石化產業工廠。
+        </DIV>
+        <DIV class="slideShowContainer" >
+
+            <DIV class="slide fade" style="display:block;">
+                <DIV class="currentSlideNum">1/12</DIV>
+                <IMG src="Images/About us images/1-封面.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+            
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">2/12</DIV>
+                <IMG src="Images/About us images/2-abous us.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">3/12</DIV>
+                <IMG src="Images/About us images/3-application.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">4/12</DIV>
+                <IMG src="Images/About us images/4-1600 1622.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">5/12</DIV>
+                <IMG src="Images/About us images/5-5800E.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">6/12</DIV>
+                <IMG src="Images/About us images/6-5700B.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">7/12</DIV>
+                <IMG src="Images/About us images/7-玻璃液位計.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+            
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">8/12</DIV>
+                <IMG src="Images/About us images/8-5500 5505H.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">9/12</DIV>
+                <IMG src="Images/About us images/9-gasket.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">10/12</DIV>
+                <IMG src="Images/About us images/10-442.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">11/12</DIV>
+                <IMG src="Images/About us images/11-spiral trac.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">12/12</DIV>
+                <IMG src="Images/About us images/12-via acton.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <A class="prev" onclick="plusSlides(-1); clearInterval(automateds);">&#10094;</A>
+            <A class="next" onclick="plusSlides(1); clearInterval(automateds);">&#10095;</A>
+            <DIV id="dotpos" style="text-align:center">
+                <SPAN class="dot active" onclick="currentSlide(1);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(2);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(3);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(4);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(5);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(6);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(7);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(8);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(9);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(10);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(11);clearInterval(automateds);"></SPAN>
+                <SPAN class="dot" onclick="currentSlide(12);clearInterval(automateds);"></SPAN>
+            </DIV>
+        </DIV>
+        <DIV style="display:inline-block; width:30%;">
+        <IMG class="img" src="Images/logo-1.jpg" style="display: inline-block; width: 90%; ;max-width: 90%; position:relative; bottom: 30%; margin:5% 3%; right: 6%;"></IMG>
+
+        <DIV class="Bodytext" style="display:inline-block; position:relative; padding: 1%; right: 5%; line-height: 2em;">聯誠精工有限公司 ACTON CO., LTD. 作為其台灣之授權代理商，秉持著A.W. CHESTERTON百年專業的服務精神，在國內各大廠區提供高可靠度之產品解決設備的洩漏問題，並提供符合環保標準與降低工安問題之專業密封解決方案。
+        </DIV>
+        </DIV>
+        
+
+        <DIV class="footer">
+            <IMG class="footer-img" src="Images/logo-1.jpg"></IMG>
+            <DIV class="text-container">
+            <DIV class="footer-text">聯誠精工有限公司 Acton Co., Ltd.</DIV>
+            <DIV class="footer-text">Email: candy@actonco.com</DIV>
+            <DIV class="footer-text">Email: actonco@hotmail.com</DIV>
+            <DIV class="footer-text">Tel: 07-3591990</DIV>
+            <DIV class="footer-text">FAX: 07-3591992</DIV>
+            <DIV class="footer-text">Tax-ID: 28601285</DIV>
+            <DIV class="footer-text">地址:高雄市左營區博愛四路10號</DIV>
+            </DIV>
+            
+    </DIV>
+    </BODY>
+</HTML>

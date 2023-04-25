@@ -1,0 +1,202 @@
+<HTML>
+    <HEAD>
+       <link rel="stylesheet" href="Website CSS.css">
+       <link rel="icon" type="images/x-icon" href="Images/logo-1.jpg">
+        <TITLE>Acton Co., Ltd. Home</TITLE>
+    </HEAD>
+
+    <!--CODE STARTS HERE-->
+    <!--CODE STARTS HERE-->
+    <!--CODE STARTS HERE-->
+    <!--CODE STARTS HERE-->
+    <!--CODE STARTS HERE-->
+    
+    <SCRIPT>
+        let slideIndex = 1;
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function AutomatedSlide(){
+            plusSlides(1);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        const automateds = setInterval(AutomatedSlide, 5000);
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+    </SCRIPT>
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <!--HTML STARTS HERE-->
+    <BODY>
+        <DIV>
+        <!--Top Menu Bar-->
+        <!--Top Menu Bar-->
+        <IMG id='banner' src="Images/banner.png"></IMG>
+        <DIV id="top-bar-pos" style="z-index: 2;">
+            
+            <DIV class="bar-container">
+                <BUTTON class="menu-bar-btn">關於我們</BUTTON>
+                    <DIV class="bar-content">
+                        <A href="About us page.html">關於我們</A>
+                    </DIV>
+            </DIV>
+            <DIV class="bar-container">
+                <BUTTON class="menu-bar-btn">產品介紹</BUTTON>
+                    <DIV class="bar-content">
+                        
+                        <A href="Gland Packing.html">密封填料</A>
+                        <A href="Live Loading Kit.html">預力彈簧自動調校組件</A>
+                        <A href="Packing Set.html" style="font-family: Century Gothic;">Packing Set</A>
+                        <A href="Disc Spring.html">預力彈簧</A>
+                        <A href="Steel Trap Gasket.html" style="font-family: Century Gothic;">Steel Trap Gasket墊片</A>
+                        <A href="Split Seal.html">雙辦式軸封</A>
+                        <A href="Spiral Trac.html">顆粒旋出器</A>
+
+                    </DIV>
+            </DIV> 
+            <DIV class="bar-container">
+                <BUTTON class="menu-bar-btn">產品應用</BUTTON>
+                    <DIV class="bar-content">
+                        <A href="Product-application.html">產品應用</A>
+                    </DIV>
+            </DIV> 
+            <DIV class="bar-container">
+                <BUTTON class="menu-bar-btn">聯絡我們</BUTTON>
+                    <DIV class="bar-content">
+                        <A href="Contact us.html">聯絡我們</A>
+                    </DIV>
+            </DIV> 
+            <DIV class="bar-container">
+                <BUTTON class="menu-bar-btn">總部主頁</BUTTON>
+                    <DIV class="bar-content">
+                        <A href="ACTON CO LTD website.html">聯誠主頁</A>
+                        <A href="https://www.chesterton.com/en-us" style="font-family: century gothic;">Chesterton</A>
+                    </DIV>
+            </DIV> 
+            
+        </DIV>
+
+        <!--Image Slide Show-->
+        <!--Image Slide Show-->
+        <DIV class="slideShowContainer">
+
+            <DIV class="slide fade" style="display:block;">
+                <DIV class="currentSlideNum">1/3</DIV>
+                <IMG src="Images/Slideshow/Liveloading.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+            
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">2/3</DIV>
+                <IMG src="Images/Slideshow/1622 slideversion.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <DIV class="slide fade">
+                <DIV class="currentSlideNum">3/3</DIV>
+                <IMG src="Images/Slideshow/Chesterton Logo.jpg" style="max-width:100%"></IMG>
+                <DIV class="caption"></DIV>
+            </DIV>
+
+            <A class="prev" onclick="plusSlides(-1); clearInterval(automateds);">&#10094;</A>
+            <A class="next" onclick="plusSlides(1); clearInterval(automateds);">&#10095;</A>
+        </DIV>
+        <DIV id="dotpos" style="text-align:center">
+            <SPAN class="dot active" onclick="currentSlide(1);clearInterval(automateds);"></SPAN>
+            <SPAN class="dot" onclick="currentSlide(2);clearInterval(automateds);"></SPAN>
+            <SPAN class="dot" onclick="currentSlide(3);clearInterval(automateds);"></SPAN>
+        </DIV>
+
+        <!--Product Section-->
+        <!--Product Section-->
+        <DIV class="large-container">
+            <A class="product-sect-container" href="Gland Packing.html">
+                <IMG class="pic-in-container" src="Images/Product Section/1622 trimmed.png"></IMG>
+                <DIV class="heading-in-container">Gland Packing</DIV>
+                <DIV class="text-in-container">各大電廠、石化廠與閥廠指定安裝於閥桿填料，可有效地防止洩漏與VOC排放量降低至符合法規要...<P><B>點擊以了解更多</B>></P></DIV>
+            </A>
+            
+            <A class="product-sect-container" href="Split Seal.html">
+                <IMG class="pic-in-container" src="Images/Product Section/442.jpg"></IMG>
+                <DIV class="heading-in-container">Split Seal</DIV>
+                <DIV class="text-in-container">適用於大型直立式、臥式泵浦剖半式設計裝卸簡易快速，免去拆裝設備、軸套更新及吊車之成本...<P><B>點擊以了解更多</B>></P></DIV>
+            </A>
+            
+            
+
+            <A class="product-sect-container" href="Packing Set.html">
+                <IMG class="pic-in-container"  src="Images/Product Section/5800 trimmed.jpg"></IMG>
+                <DIV class="heading-in-container">Packing Set</DIV>
+                <DIV class="text-in-container">獨特鍥型設計的石墨環，密封性高，有效降低閥桿摩擦力，保持閥桿作動滑順，不易遲滯現象...<P><B>點擊以了解更多</B>></P></DIV>
+            </A> 
+        </DIV>
+
+        <DIV class="large-container">
+            <A class="product-sect-container" href="Live Loading Kit.html">
+                <IMG class="pic-in-container" src="Images/Product Section/5700B trimmed.png"></IMG>
+                <DIV class="heading-in-container">Live Loading Kit</DIV>
+                <DIV class="text-in-container">結合型號1600與5300GTP來密封填料函，上下兩端採用1600編織環(End Rings)增強密封；...<P><B>點擊以了解更多</B>></P></DIV>
+            </A>
+            
+            <A class="product-sect-container" href="Disc Spring.html">
+                <IMG class="pic-in-container" src="Images/Product Section/Disc spring.jpg"></IMG>
+                <DIV class="heading-in-container">Washer</DIV>
+                <DIV class="text-in-container">	安裝於法蘭與熱交換器兩端螺帽下，保持螺栓的鎖固扭力值，保持墊片密封所需的最小鎖緊...<P><B>點擊以了解更多</B>></P></DIV>
+            </A>
+
+            <A class="product-sect-container" href="Steel Trap Gasket.html">
+                <IMG class="pic-in-container"  src="Images/Product Section/SteelTrap.jpg"></IMG>
+                <DIV class="heading-in-container">Steel Trap Gasket</DIV>
+                <DIV class="text-in-container">內夾石墨之獨特飛鏢型設計，耐高溫、壓縮性高且鬆弛性低，一個墊片尺寸可通用法蘭尺...<P><B>點擊以了解更多</B>></P></DIV>
+            </A> 
+        </DIV>
+
+        <DIV class="large-container">
+            <A class="product-sect-container" href="Spiral Trac.html">
+                <IMG class="pic-in-container" src="Images/Product Section/Spiral Trac.jpg"></IMG>
+                <DIV class="heading-in-container">Spiral Trac</DIV>
+                <DIV class="text-in-container">專利設計配合安裝於迫緊密封或軸封，避免製程中固體顆粒磨蝕心軸，造成泵浦壽命簡短...<P><B>點擊以了解更多</B>></P></DIV>
+            </A>
+        </DIV>
+    </DIV>
+<P>hi</P>
+
+        <DIV class="footer">
+        <IMG class="footer-img" src="Images/logo-1.jpg"></IMG>
+        <DIV class="text-container">
+        <DIV class="footer-text">聯誠精工有限公司 Acton Co., Ltd.</DIV>
+        <DIV class="footer-text">Email: candy@actonco.com</DIV>
+        <DIV class="footer-text">Email: actonco@hotmail.com</DIV>
+        <DIV class="footer-text">Tel: 07-3591990</DIV>
+        <DIV class="footer-text">FAX: 07-3591992</DIV>
+        <DIV class="footer-text">Tax-ID: 28601285</DIV>
+        <DIV class="footer-text">地址:高雄市左營區博愛四路10號</DIV>
+        </DIV>
+        
+</DIV>
+
+    </BODY>
+</HTML>
